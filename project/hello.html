@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Title</title>
+</head>
+<body id="body">
+<header id="head">Ankh Systems</header>
+<div>
+    <div  id="header">
+        <div id = "rect_div">
+            <div id = "rect_div_text">
+                <p>東京オフィスは、虎ノ門にて新しいスタートを切ります</p>
+            </div>
+        </div>
+    </div>
+    <div class="second_main">
+        <div id="move_green col-4">
+        </div>
+        <div id ="nxt_move_green">
+            <text>このたび弊社は、東京オフィスを東京都港区虎ノ門に移転し
+                ２０１４年３月４日(火)大安より営業の運びとなりました。
+                新オフィスは、打ち合わせスペースも多くありますので
+                お近くにお越しの際はどうぞお気軽にお立ち寄りください。
+                今後とも弊社をどうぞよろしくお願い申し上げます。</text>
+
+        </div>
+    </div>
+    <div id="map" style="width: 20%; height: 400px;"></div>
+
+    <script>
+        function initMap() {
+            const location = { lat: 34.676992, lng: 135.499075 };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 20,
+                center: location,
+            });
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+            });
+        }
+    </script>
+
+    <script
+            async
+            defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZY47goHDEkU-Re0Vb4cRAN8irgdOgSnc&callback=initMap">
+    </script>
+</div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+<footer id="foot">Copyright (c) ANKH Systems.co,Ltd.All Rights Reserved</footer>
+</body>
+</html>
