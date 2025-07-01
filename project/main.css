@@ -22,17 +22,14 @@
     opacity: 1;
 }
 #main_img{
-    /* Layout Properties */
     top: 30px;
     left: 500px;
     width: 1000px;
     height: 590px;
-    /* UI Properties */
     background: transparent url('img/main-v.png') 0% 0% no-repeat padding-box;
     opacity: 1;
 }
 #main_img_content{
-    /* Layout Properties */
     text-align: center;
     margin-top: 30px;
     top: 66px;
@@ -62,6 +59,7 @@
     text-align: center;
     display: inline-block;
 }
+
 #map_area{
     width: 490px;
     height: 380px;
@@ -162,63 +160,93 @@
 #lets_get_drunk {
     width: 490px;
     height: 310px;
+    margin: 10px;
     background-color: #DC5E48;
-    box-shadow: 0px 1px 1px rgba(216, 216, 216, 0.75); /* D8D8D8BF */
-    border-radius: 8px; /* Added for consistency with modern design */
+    box-shadow: 0px 1px 1px rgba(216, 216, 216, 0.75);
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the start (left) */
-    padding: 20px; /* Padding around the content */
-    position: relative; /* For absolute positioning of footer if needed, but flex is preferred */
-    overflow: hidden; /* Hide anything that goes outside */
+    align-items: flex-start;
+    padding: 20px;
+    position: relative;
 }
 
 #drunk_title {
     width: 307px;
     height: 70px;
     background: transparent url('img/title@2x.png') no-repeat center center;
-    background-size: contain; /* Ensure image fits within the set dimensions */
-    opacity: 1;
-    margin-bottom: 10px; /* Space below title */
-    align-self: center; /* Center the title horizontally */
+    background-size: contain;
+    margin-bottom: 10px;
+    align-self: center;
 }
 
 .drunk_subtitle_main {
-    margin: 0;
     padding-left: 15px;
     width: 300px;
     height: 12px;
-    text-align: left;
-    font: normal normal normal 12px/17px Hiragino Sans;
     color: #FFFFFF;
+    font: normal normal normal 12px/17px Hiragino Sans;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
 .drunk_item_icon {
-    width: 37px; /* Assuming similar size for both icons */
+    width: 37px;
     height: 26px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
     opacity: 1;
-    margin-right: 10px; /* Space between icon and other images */
+    margin-right: 10px;
 }
 
 #drunk_footer {
     font-size: 9px;
     letter-spacing: 0.45px;
     color: #FFFFFF;
-    opacity: 1;
-    align-self: flex-end; /* Align to the right */
-    margin-top: auto; /* Push to the bottom */
-    margin-right: 10px; /* Adjust from right edge */
-    margin-bottom: 5px; /* Space from bottom edge */
+    text-align: right;
+    opacity: 0.5;
+    align-self: flex-end;
+    margin-top: auto;
 }
+#subtitle_1_img {
+    width: 37px;
+    height: 25px;
+    background: transparent url('img/83@2x.png') no-repeat center center;
+    background-size: contain;
+    display: block;
+    margin: 10px auto;
+    opacity: 1;
+}
+
+#subtitle_2_img {
+    width: 350px;
+    height: 35px;
+    background: transparent url('img/Beer@2x.png') no-repeat center center;
+    background-size: contain;
+    display: inline-block;
+    align-content: end;
+    margin: 10px auto; /* center horizontally */
+    opacity: 1;
+}
+
+#subtitle_4_img {
+    width: 350px;
+    height: 35px;
+    background: transparent url('img/Ramen@2x.png') no-repeat center center;
+    background-size: contain;
+    display: block;
+    margin: 10px auto; /* center horizontally */
+    opacity: 1;
+}
+
 
 /* Statue Section */
 #statue {
     width: 490px;
     height: 530px;
+    margin: 10px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 1px rgba(216, 216, 216, 0.75); /* D8D8D8BF */
     opacity: 1;
@@ -522,21 +550,6 @@ text{
     letter-spacing: 2.38px;
     color: #000000;
     opacity: 1;
-
-}
-#map{
-    /* Layout Properties */
-    top: 920px;
-    left: 500px;
-    width: 490px;
-    height: 380px;
-    /* UI Properties */
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 1px 1px #D8D8D8BF;
-    opacity: 1;
-}
-
-#map_image{
 
 }
 
