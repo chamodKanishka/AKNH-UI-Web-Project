@@ -1,10 +1,8 @@
 #head{
-    /* Layout Properties */
     left: 0px;
     margin-top: -10px;
     width: 2000px;
     height: 39px;
-    /* UI Properties */
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 1px 1px #D8D8D8BF;
     opacity: 1;
@@ -17,7 +15,6 @@
     left: 12px;
     width: 125px;
     height: 14px;
-    /* UI Properties */
     background: transparent url('img/logo.svg') 0% 0% no-repeat padding-box;
     opacity: 1;
 }
@@ -36,8 +33,6 @@
     left: 500px;
     width: 1000px;
     height: 130px;
-    /* UI Properties */
-    /*background: #263832  no-repeat padding-box;*/
     background-color: rgba(38, 56, 50, 0.61);
 }
 #main_img_image {
@@ -227,22 +222,21 @@
     background-size: contain;
     display: inline-block;
     align-content: end;
-    margin: 10px auto; /* center horizontally */
+    margin: 10px auto;
     opacity: 1;
 }
 
 #subtitle_4_img {
     width: 350px;
     height: 35px;
-    background: transparent url('img/Ramen@2x.png') no-repeat center center;
+    background: transparent url('img/Ramenset@2x.png') no-repeat center center;
     background-size: contain;
     display: block;
-    margin: 10px auto; /* center horizontally */
+    margin: 10px auto;
     opacity: 1;
 }
 
 
-/* Statue Section */
 #statue {
     width: 490px;
     height: 530px;
@@ -337,7 +331,7 @@
 #photo_gallery_icon {
     width: 30px;
     height: 30px;
-    background: transparent url('img/Camera.png') no-repeat center center;
+    background: transparent url('img/camera.png') no-repeat center center;
     background-size: contain;
 }
 
@@ -373,14 +367,15 @@
 #pick_up_foods {
     width: 490px;
     height: 340px;
-    margin:20px;
+    margin: 20px;
     background: #E9BC06 no-repeat padding-box;
     box-shadow: 0px 1px 1px #D8D8D8BF;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    opacity: 1;
     padding: 20px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 #pick_up_foods_title {
@@ -388,28 +383,36 @@
     height: 70px;
     background: transparent url('img/Pick up foods@2x.png') no-repeat center center;
     background-size: contain;
-    margin-bottom: 15px;
+    margin: 0 auto;
 }
 
 .pickup_wrapper {
     display: flex;
     gap: 15px;
+    align-items: flex-start;
+}
+
+#head_text_pickup{
+    text-align: left;
+    font: normal normal normal 18px/20px Hiragino Sans;
+    letter-spacing: -0.45px;
+    color: #FFFFFF;
 }
 
 #ramen {
     width: 161px;
     height: 204px;
-    background: transparent url('img/Ramen.png') no-repeat center center;
+    background: transparent url('img/ramen@2x.png') no-repeat center center;
     background-size: contain;
     flex-shrink: 0;
 }
 
 #pick_up_foods_content {
-    width: 269px;
-    height: 217px;
+    width: 100%;
     color: #FFFFFF;
-    font: normal normal normal 14px/20px Hiragino;
     text-align: left;
+    font: normal normal normal 12px/20px Hiragino Sans;
+    letter-spacing: -0.3px;
 }
 
 #end_head{
@@ -418,7 +421,6 @@
     left: 460px;
     width: 950px;
     height: 100px;
-    /* UI Properties */
     text-align: center;
     font: normal normal normal 36px/32px Hiragino;
     letter-spacing: 3.6px;
@@ -430,7 +432,7 @@
     width: 1000px;
     height: 100px;
     padding-top: 100px;
-    margin: 10px;
+    margin-top: 150px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 1px 1px #D8D8D8BF;
     opacity: 1;
@@ -441,7 +443,6 @@
     left: 130px;
     width: 328px;
     height: 36px;
-    /* UI Properties */
     background: transparent url('img/logo.png') 0% 0% no-repeat padding-box;
     opacity: 1;
 }
@@ -451,7 +452,6 @@
     left: 480px;
     width: 400px;
     height: 30px;
-    /* UI Properties */
     text-align: left;
     font: normal normal normal 16px/20px Hiragino;
     letter-spacing: 0px;
@@ -465,36 +465,14 @@
     right: 20px;
     width: 6px;
     height: 11px;
-    /* UI Properties */
     background: transparent url('img/arrow.png') 0% 0% no-repeat padding-box;
 }
 body{
-    /* Layout Properties */
     top: 1px;
     left: 0px;
     width: 2000px;
     height: 2397px;
     background-color: black;
-    /* UI Properties */
-    opacity: 1;
-}
-#rect_div{
-    /* Layout Properties */
-    top: 66px;
-    left: 500px;
-    width: 1000px;
-    height: 130px;
-    /* UI Properties */
-    background: #263832 0% 0% no-repeat padding-box;
-    opacity: 0.61;
-}
-#rect_div_text{
-    top: 85px;
-    left: 678px;
-    width: 642px;
-    height: 61px;
-    /* UI Properties */
-    background: transparent url('img/Hello,TORANOMON.png') 0% 0% no-repeat padding-box;
     opacity: 1;
 }
 
@@ -503,7 +481,6 @@ p{
     left: 674px;
     width: 652px;
     height: 25px;
-    /* UI Properties */
     text-align: center;
     font: normal normal normal 25px/18px Hiragino;
     letter-spacing: 1.25px;
@@ -516,7 +493,6 @@ p{
     left: 500px;
     width: 1000px;
     height: 260px;
-    /* UI Properties */
     background: #FFFFFF no-repeat;
     box-shadow: 0px 1px 1px #D8D8D8BF;
     opacity: 1;
@@ -571,7 +547,6 @@ text{
     left: 1019px;
     width: 440px;
     height: 158px;
-    /* UI Properties */
     text-align: left;
     font: normal normal normal 14px/36px Hiragino;
     letter-spacing: 2.38px;
@@ -581,13 +556,11 @@ text{
 }
 
 #foot{
-    /* Layout Properties */
     position: absolute;
     top: 2450px;
     left: 0px;
     width: 2000px;
     height: 50px;
-    /* UI Properties */
     background: #CCCCCC 0% 0% no-repeat padding-box;
     display: flex;
     justify-content: center;
@@ -602,12 +575,14 @@ text{
     opacity: 1;
 }
 
+#messege{
 
-.ken{
-    width: 14px;
-    height: 14px;
-    text-align: left;
-    font: normal normal normal 14px/17px Hiragino;
-    letter-spacing: 0px;
-    color: #FFFFFF;
+    width: 1000px;
+    height: 36px;
+    text-align: center;
+    font: normal normal normal 36px/32px Hiragino Sans;
+    letter-spacing: 3.6px;
+    color: #000000;
+    opacity: 1;
+
 }
