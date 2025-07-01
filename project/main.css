@@ -389,10 +389,11 @@
     opacity: 1;
 }
 #end_head{
-    top: 2118px;
-    left: 554px;
-    width: 902px;
-    height: 36px;
+    position: absolute;
+    top: 2250px;
+    left: 460px;
+    width: 950px;
+    height: 100px;
     /* UI Properties */
     text-align: center;
     font: normal normal normal 36px/32px Hiragino;
@@ -401,9 +402,10 @@
     opacity: 1;
 }
 #ANKH_Systems{
-    top: 2176px;
-    left: 500px;
-    width: 1000px;
+    position: absolute;
+    top: 2320px;
+    left: 430px;
+    width: 980px;
     height: 100px;
     /* UI Properties */
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -411,19 +413,33 @@
     opacity: 1;
 }
 #ANKH_Systems_image{
-    /* Layout Properties */
-    top: 2206px;
-    left: 630px;
+    position: absolute;
+    top: 30px;
+    left: 130px;
     width: 328px;
     height: 36px;
     /* UI Properties */
     background: transparent url('img/logo.png') 0% 0% no-repeat padding-box;
     opacity: 1;
 }
+#ANKH_Systems_text{
+    position: absolute;
+    top: 43px;
+    left: 480px;
+    width: 400px;
+    height: 30px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 16px/20px Hiragino;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin: 0;
+}
 #arrow{
-    /* Layout Properties */
-    top: 2222px;
-    left: 1480px;
+    position: absolute;
+    top: 45px;
+    right: 20px;
     width: 6px;
     height: 11px;
     /* UI Properties */
@@ -543,7 +559,8 @@ text{
 
 #foot{
     /* Layout Properties */
-    top: 2348px;
+    position: absolute;
+    top: 2450px;
     left: 0px;
     width: 2000px;
     height: 50px;
