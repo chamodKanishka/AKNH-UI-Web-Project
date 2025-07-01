@@ -234,7 +234,7 @@
 #subtitle_4_img {
     width: 350px;
     height: 35px;
-    background: transparent url('img/Ramenset@2x.png') no-repeat center center;
+    background: transparent url('img/Ramen@2x.png') no-repeat center center;
     background-size: contain;
     display: block;
     margin: 10px auto; /* center horizontally */
@@ -373,15 +373,14 @@
 #pick_up_foods {
     width: 490px;
     height: 340px;
-    margin: 20px;
+    margin:20px;
     background: #E9BC06 no-repeat padding-box;
     box-shadow: 0px 1px 1px #D8D8D8BF;
-    opacity: 1;
-    padding: 20px;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 #pick_up_foods_title {
@@ -389,36 +388,28 @@
     height: 70px;
     background: transparent url('img/Pick up foods@2x.png') no-repeat center center;
     background-size: contain;
-    margin: 0 auto;
+    margin-bottom: 15px;
 }
 
 .pickup_wrapper {
     display: flex;
     gap: 15px;
-    align-items: flex-start;
-}
-
-#head_text_pickup{
-    text-align: left;
-    font: normal normal normal 18px/20px Hiragino Sans;
-    letter-spacing: -0.45px;
-    color: #FFFFFF;
 }
 
 #ramen {
     width: 161px;
     height: 204px;
-    background: transparent url('img/ramen@2x.png') no-repeat center center;
+    background: transparent url('img/Ramen.png') no-repeat center center;
     background-size: contain;
     flex-shrink: 0;
 }
 
 #pick_up_foods_content {
-    width: 100%;
+    width: 269px;
+    height: 217px;
     color: #FFFFFF;
+    font: normal normal normal 14px/20px Hiragino;
     text-align: left;
-    font: normal normal normal 12px/20px Hiragino Sans;
-    letter-spacing: -0.3px;
 }
 
 #end_head{
@@ -439,7 +430,7 @@
     width: 1000px;
     height: 100px;
     padding-top: 100px;
-    margin-top: 150px;
+    margin: 10px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 1px 1px #D8D8D8BF;
     opacity: 1;
@@ -611,15 +602,12 @@ text{
     opacity: 1;
 }
 
-#messege{
 
-    width: 1000px;
-    height: 36px;
-    /* UI Properties */
-    text-align: center;
-    font: normal normal normal 36px/32px Hiragino Sans;
-    letter-spacing: 3.6px;
-    color: #000000;
-    opacity: 1;
-
+.ken{
+    width: 14px;
+    height: 14px;
+    text-align: left;
+    font: normal normal normal 14px/17px Hiragino;
+    letter-spacing: 0px;
+    color: #FFFFFF;
 }

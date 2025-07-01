@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <title>Title</title>
+</head>
+<body style="background-color: #f2f2f2;">
+<header id="head">
+  <div id="head_logo"></div>
+</header>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="col-md-6 d-flex flex-column gap-4" id="main_img">
+        <div id="main_img_content">
+          <div id="main_img_image"></div>
+          <p id="main_img_sub">東京オフィスは、虎ノ門にて新しいスタートを切ります</p>
+        </div>
+      </div>
+      <div class="row g-0" id="second_row">
+        <div class="col-5" id="first_div">
+          <div id="first_div_image"></div>
+        </div>
+        <div class="col-5" id="second_div">
+          このたび弊社は、東京オフィスを東京都港区虎ノ門に移転し</br>
+          ２０１４年３月４日(火)大安より営業の運びとなりました。</br>
+          新オフィスは、打ち合わせスペースも多くありますので</br>
+          お近くにお越しの際はどうぞお気軽にお立ち寄りください。</br>
+          今後とも弊社をどうぞよろしくお願い申し上げます。</br>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map Division -->
+    <div class="container">
+      <div class="row second-row">
+        <div class="col-md-6" id="map_area">
+          <div class="map_head_wrapper">
+            <div id="map_icon"></div>
+            <h4 class="map_head_text">新東京オフィスの地図はこちら</h4>
+          </div>
+          <p id="map_bottom_text">
+            〒105-0001 港区虎ノ門2-7-16 エグゼクティブタワー虎ノ門504
+          </p>
+          <div id="map_canvas"></div>
+        </div>
+
+        <!--contact info division-->
+        <div class="col-md-6" id="contact_info">
+          <div class="contact_info_head">
+            <div id="contact_icon"></div>
+            <p id="contact_head_text">電話・FAX番号が変わりました</p>
+          </div>
+
+          <div id="contact_info_image"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--Lets Drunk Division-->
+    <div class="row third-row">
+      <div class="col-4" id="lets_get_drunk">
+        <div id="drunk_title"></div>
+        <p class="drunk_subtitle_main">始発まで営業している居酒屋</p>
+        <!--                    <div id="subtitle_1_img"></div>-->
+        <div id="subtitle_2_img"></div>
+        <p class="drunk_subtitle_main">始発まで営業しているラーメン屋</p>
+        <div id="subtitle_3_img"></div>
+        <div id="subtitle_4_img"></div>
+        <p id="drunk_footer">※虎ノ門駅の半径1km以内</p>
+      </div>
+
+      <!--  Statue Division-->
+      <div class="col-4" id="statue">
+        <div id="statue_icon"></div>
+        <p id="statue_head">虎ノ門の由来って？</p>
+        <div id="statue_image"></div>
+        <p id="statue_content">虎ノ門駅を出てすぐ、虎ノ門交差点付近に鎮座するこの銅像。
+          これ、なんだかお分かりでしょうか？ そう、猫です。
+          というのは嘘で予想どおり、虎です(笑) 虎ノ門だけに虎の銅像なんです！
+          そもそもどうして、ここの地名が「虎ノ門」なのか気になりませんか？</p>
+      </div>
+    </div>
+
+    <!-- Photo Gallery-->
+    <div class="row forth-row">
+      <div class="photo_gallery">
+      </div>
+      <div id="photo_gallery">
+        <div class="photo_gallery_head_wrapper">
+          <div id="photo_gallery_icon"></div>
+          <p class="photo_gallery_title">フォトギャラリー</p>
+        </div>
+
+        <div class="photo_gallery_images">
+          <div class="left_image">
+            <img src="img/photo1@2x.png" alt="Main Photo" />
+          </div>
+          <div class="right_images">
+            <img src="img/photo2.png" alt="Photo 2" />
+            <img src="img/photo3.png" alt="Photo 3" />
+            <img src="img/photo4.png" alt="Photo 4" />
+          </div>
+        </div>
+      </div>
+      <div class="col-4" id="pick_up_foods">
+        <div id="pick_up_foods_title"></div>
+        <div class="ramen">
+        </div>
+        <p class="foods_subtitle_main">めん徳　二代目つじ田</p>
+      </div>
+
+    </div>
+    <div class="row forth-row">
+      <div class="col-8">
+        <p id="end_head">新しくなった東京オフィスへぜひお越しください。</p>
+      </div>
+    </div>
+    <div class="row"> <!-- New separate row for ANKH_Systems -->
+      <div class="col-8" id="ANKH_Systems" onclick="homepage()">
+        <div id="ANKH_Systems_image"></div>
+        <p id="ANKH_Systems_text">株式会社アンクシステムズ コーポレートサイトへ</p>
+        <div id="arrow"></div>
+      </div>
+      <script>
+        function homepage() {
+          const click_yes = confirm("Do you want to open ANKH System homepage?");
+          if (click_yes) {
+            window.open("http://https://ankh-systems.co.jp", "_blank");
+          }
+        }
+      </script>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<script>
+  function initMap() {
+    const location = { lat: 35.661389, lng: 139.743889 };
+    const map = new google.maps.Map(document.getElementById("map_canvas"), {
+      zoom: 10,
+      center: location,
+    });
+    const marker = new google.maps.Marker({
+      position: location,
+      map: map,
+    });
+  }
+</script>
+
+<script
+        async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZY47goHDEkU-Re0Vb4cRAN8irgdOgSnc&callback=initMap">
+</script>
+
+</body>
+<footer id="foot">
+  <div id = "footer_text">Copyright (c) ANKH Systems.co,Ltd.All Rights Reserved</div>
+</footer>
+</html>
