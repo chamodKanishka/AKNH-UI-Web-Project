@@ -441,45 +441,49 @@ p{
     width: 1000px;
     height: 260px;
     /* UI Properties */
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #FFFFFF no-repeat;
     box-shadow: 0px 1px 1px #D8D8D8BF;
     opacity: 1;
 }
 
-#first_div{
-    /* Layout Properties */
-    top: 640px;
-    left: 500px;
-    width: 460px;
-    height: 260px;
-    /* UI Properties */
-    background: #07AB74 0% 0% no-repeat padding-box;
+#main_second_row{
+    margin-top: 20px;
+    margin-bottom: 20px;
     box-shadow: 0px 1px 1px #D8D8D8BF;
-    opacity: 1;
+    height: 260px;
+    width: 1000px;
+}
+
+#first_div {
+    background: #07AB74;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 1px #D8D8D8BF;
 }
 
 #first_div_image {
-    top: 675px;
-    left: 556px;
     width: 349px;
     height: 191px;
-    /* UI Properties */
-    background: transparent url('img/We just moved toTORANOMON4th March 2014.png') 0% 0% no-repeat padding-box;
-    opacity: 1;
+    background: transparent url('img/We just moved toTORANOMON4th March 2014@2x.png') no-repeat center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
-#second_div{
-    /* Layout Properties */
-    top: 692px;
-    left: 1019px;
-    width: 440px;
-    height: 158px;
-    /* UI Properties */
+
+#second_div {
     text-align: left;
     font: normal normal normal 14px/36px Hiragino Sans;
     letter-spacing: 2.38px;
     color: #000000;
     opacity: 1;
+    width: 540px;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 text{
     top: 692px;
