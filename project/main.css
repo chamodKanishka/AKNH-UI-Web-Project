@@ -107,42 +107,54 @@
     width: 400px;
     height: 12px;
     text-align: left;
+    align-content: center;
     font: normal normal normal 12px/17px Hiragino;
     color: #000000;
 }
-#contact_info{
+#contact_info {
     width: 490px;
     height: 220px;
-    margin:10px;
-    background: #846AB4 no-repeat padding-box;
-    box-shadow: 0px 1px 1px #D8D8D8BF;
-    opacity: 1;
-    background-size: contain;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #846AB4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-#contact_info_head{
+
+.contact_info_head {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
+    margin-bottom: 16px;
+}
 
-}
-#contact_head_text{
-    width: 300px;
-    height: 22px;
-    text-align: left;
-    font: normal normal normal 20px/18px Hiragino;
-    color: #FFFFFF;
-}
-#contact_icon{
+#contact_icon {
     width: 19px;
     height: 26px;
-    background: transparent url('img/iPhone.png') no-repeat center center;
-    background-size: contain;
+    background-image: url('img/iPhone.png');
     opacity: 1;
 }
+
+#contact_head_text {
+    width: 300px;
+    height: auto;
+    text-align: left;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 0;
+    font-weight: normal;
+}
+
 #contact_info_image {
     width: 385px;
     height: 80px;
-    background: transparent url('img/tel-fax@2x.png') no-repeat center center;
+    margin-top: 20px;
+    background-image: url('img/tel-fax@2x.png');
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: contain;
     opacity: 1;
 }
