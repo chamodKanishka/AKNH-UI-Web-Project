@@ -158,125 +158,128 @@
     background-size: contain;
     opacity: 1;
 }
-#lets_get_drunk{
-    top: 1320px;
-    left: 500px;
+
+#lets_get_drunk {
     width: 490px;
     height: 310px;
-    /* UI Properties */
-    background: #DC5E48 0% 0% no-repeat padding-box;
-    box-shadow: 0px 1px 1px #D8D8D8BF;
-    opacity: 1;
+    background-color: #DC5E48;
+    box-shadow: 0px 1px 1px rgba(216, 216, 216, 0.75); /* D8D8D8BF */
+    border-radius: 8px; /* Added for consistency with modern design */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start (left) */
+    padding: 20px; /* Padding around the content */
+    position: relative; /* For absolute positioning of footer if needed, but flex is preferred */
+    overflow: hidden; /* Hide anything that goes outside */
 }
-#drunk_title{
-    top: 1342px;
-    left: 598px;
+
+#drunk_title {
     width: 307px;
     height: 70px;
-    /* UI Properties */
-    background: transparent url('img/title.png') 0% 0% no-repeat padding-box;
+    background: transparent url('img/title@2x.png') no-repeat center center;
+    background-size: contain; /* Ensure image fits within the set dimensions */
     opacity: 1;
+    margin-bottom: 10px; /* Space below title */
+    align-self: center; /* Center the title horizontally */
 }
-.drunk_subtitle_1{
-    /* Layout Properties */
-    top: 1447px;
-    left: 537px;
-    width: 155px;
-    height: 12px;
-    /* UI Properties */
-    text-align: left;
-    font: normal normal normal 12px/17px Hiragino;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
 
-}
-#drunk_footer{
-    /* Layout Properties */
-    top: 1612px;
-    left: 863px;
-    width: 116px;
-    height: 9px;
-    /* UI Properties */
+.drunk_subtitle_main {
+    margin: 0;
+    padding-left: 15px;
+    width: 300px;
+    height: 12px;
     text-align: left;
+    font: normal normal normal 12px/17px Hiragino Sans;
+    color: #FFFFFF;
+}
+
+
+.drunk_item_icon {
+    width: 37px; /* Assuming similar size for both icons */
+    height: 26px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    opacity: 1;
+    margin-right: 10px; /* Space between icon and other images */
+}
+
+#drunk_footer {
+    font-size: 9px;
     letter-spacing: 0.45px;
     color: #FFFFFF;
     opacity: 1;
+    align-self: flex-end; /* Align to the right */
+    margin-top: auto; /* Push to the bottom */
+    margin-right: 10px; /* Adjust from right edge */
+    margin-bottom: 5px; /* Space from bottom edge */
 }
-#subtitle_1_img{
-    /* Layout Properties */
-    top: 1474px;
-    left: 536px;
-    width: 37px;
-    height: 26px;
-    /* UI Properties */
-    background: transparent url('img/83.png') 0% 0% no-repeat padding-box;
-    opacity: 1;
-}
-#subtitle_2_img{
-    /* Layout Properties */
-    top: 1468px;
-    left: 608px;
-    width: 350px;
-    height: 35px;
-    /* UI Properties */
-    background: transparent url('img/Beer.png') 0% 0% no-repeat padding-box;
-    opacity: 1;
-}
-#statue{
-    /* Layout Properties */
-    top: 1160px;
-    left: 1010px;
+
+/* Statue Section */
+#statue {
     width: 490px;
     height: 530px;
-    /* UI Properties */
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 1px 1px #D8D8D8BF;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 1px rgba(216, 216, 216, 0.75); /* D8D8D8BF */
     opacity: 1;
+    border-radius: 8px; /* Added for consistency with modern design */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    padding: 20px; /* Add padding inside the box */
 }
-#statue_icon{
-    /* Layout Properties */
-    top: 1178px;
-    left: 1027px;
+
+#statue_icon {
     width: 44px;
     height: 30px;
-    /* UI Properties */
     background: transparent url('img/Business-Graduation-cap-icon.png') 0% 0% no-repeat padding-box;
+    background-size: contain;
     opacity: 1;
+    margin-bottom: 10px; /* Space below icon */
+    align-self: flex-start; /* Align to left */
+    margin-left: 10px; /* Adjust for padding */
 }
-#statue_head{
-    top: 1180px;
-    left: 1079px;
-    width: 197px;
-    height: 22px;
-    /* UI Properties */
+
+#statue_head {
+    width: auto; /* Let width adjust to content */
+    height: auto;
     text-align: left;
-    font: normal normal normal 22px/17px Hiragino;
-    letter-spacing: 0px;
+    font-size: 22px;
+    line-height: 17px; /* This line-height might be too small for 22px font, adjust if text overlaps */
+    font-weight: normal;
     color: #000000;
     opacity: 1;
+    margin: 0; /* Remove default margins */
+    align-self: flex-start; /* Align to left */
+    margin-left: 10px; /* Adjust for padding */
+    margin-top: -35px; /* Pull up to align with icon */
+    padding-left: 50px; /* Space for icon */
 }
-#statue_image{
-    top: 1227px;
-    left: 1030px;
+
+#statue_image {
     width: 450px;
     height: 320px;
-    /* UI Properties */
     background: transparent url('img/photo.png') 0% 0% no-repeat padding-box;
+    background-size: contain;
     opacity: 1;
+    margin-top: 20px; /* Space above image */
+    margin-bottom: 20px; /* Space below image */
 }
-#statue_content{
-    top: 1570px;
-    left: 1030px;
-    width: 382px;
-    height: 92px;
-    /* UI Properties */
+
+#statue_content {
+    width: auto; /* Let width adjust, max-width will control line breaks */
+    max-width: 450px; /* Limit content width */
+    height: auto;
     text-align: left;
-    font: normal normal normal 12px/20px Hiragino;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: normal;
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
+    margin: 0; /* Remove default margins */
 }
+
 #photo_gallery{
     /* Layout Properties */
     top: 1650px;
@@ -550,11 +553,20 @@ text{
 }
 
 #footer_text{
-    /* UI Properties */
     margin-top: 15px;
     text-align: center;
     font: normal normal normal 14px/17px Hiragino;
     letter-spacing: 0.7px;
     color: #000000;
     opacity: 1;
+}
+
+
+.ken{
+    width: 14px;
+    height: 14px;
+    text-align: left;
+    font: normal normal normal 14px/17px Hiragino;
+    letter-spacing: 0px;
+    color: #FFFFFF;
 }
