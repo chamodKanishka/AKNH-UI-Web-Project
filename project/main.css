@@ -91,7 +91,7 @@
     background-size: contain;
 }
 
-#map_head_text{
+.map_head_text{
     padding-top: 20px;
     width: 310px;
     height: 22px;
@@ -259,43 +259,45 @@
 #statue_icon {
     width: 44px;
     height: 30px;
+    padding-top: 10px;
     background: transparent url('img/Business-Graduation-cap-icon.png') 0% 0% no-repeat padding-box;
     background-size: contain;
     opacity: 1;
-    margin-bottom: 10px; /* Space below icon */
-    align-self: flex-start; /* Align to left */
-    margin-left: 10px; /* Adjust for padding */
+    margin-bottom: 10px;
+    align-self: flex-start;
+    margin-left: 10px;
 }
 
 #statue_head {
-    width: auto; /* Let width adjust to content */
+    width: auto;
     height: auto;
+    padding-top: 10px;
     text-align: left;
     font-size: 22px;
-    line-height: 17px; /* This line-height might be too small for 22px font, adjust if text overlaps */
+    line-height: 17px;
     font-weight: normal;
     color: #000000;
     opacity: 1;
-    margin: 0; /* Remove default margins */
-    align-self: flex-start; /* Align to left */
-    margin-left: 10px; /* Adjust for padding */
-    margin-top: -35px; /* Pull up to align with icon */
-    padding-left: 50px; /* Space for icon */
+    margin: 0;
+    align-self: flex-start;
+    margin-left: 10px;
+    margin-top: -35px;
+    padding-left: 50px;
 }
 
 #statue_image {
     width: 450px;
     height: 320px;
-    background: transparent url('img/photo.png') 0% 0% no-repeat padding-box;
+    background: transparent url('img/photo.png') no-repeat padding-box;
     background-size: contain;
     opacity: 1;
-    margin-top: 20px; /* Space above image */
-    margin-bottom: 20px; /* Space below image */
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #statue_content {
-    width: auto; /* Let width adjust, max-width will control line breaks */
-    max-width: 450px; /* Limit content width */
+    width: auto;
+    max-width: 450px;
     height: auto;
     text-align: left;
     font-size: 12px;
@@ -304,65 +306,76 @@
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
-    margin: 0; /* Remove default margins */
+    margin: 0;
 }
 
-#photo_gallery{
+#photo_gallery {
     width: 490px;
     height: 400px;
-    background: #FFFFFF no-repeat padding-box;
+    margin-top: -40px;
+    margin-left: 10px;
+    padding-left: 12px;
+    background-color: #FFFFFF;
     box-shadow: 0px 1px 1px #D8D8D8BF;
-    opacity: 1;
-}
-#photo_gallery_icon{
-    margin-top: 20px;
-    width: 30px;
-    height: 30px;
-    background: transparent url('img/camera@2x.png') no-repeat center center;
-    background-size: contain;
-}
-#photo_gallery_image_1{
-    width: 338px;
-    height: 310px;
-    background: transparent url('img/photo1.png') 0% 0% no-repeat padding-box;
-    opacity: 1;
-}
-#photo_gallery_image_2{
-    width: 112px;
-    height: 103px;
-    /* UI Properties */
-    background: transparent url('img/photo2.png') 0% 0% no-repeat padding-box;
-    opacity: 1;
-}
-#photo_gallery_image_3{
-    width: 112px;
-    height: 101px;
-    /* UI Properties */
-    background: transparent url('img/photo3.png') 0% 0% no-repeat padding-box;
-    opacity: 1;
-}
-#photo_gallery_image_4{
-    width: 112px;
-    height: 105px;
-    background: transparent url('img/photo4.png') 0% 0% no-repeat padding-box;
-    opacity: 1;
 }
 
-#pick_up_foods{
-    top: 1710px;
-    left: 1010px;
+#photo_gallery_box {
     width: 490px;
-    height: 340px;
-    background: #E9BC06 0% 0% no-repeat padding-box;
-    box-shadow: 0px 1px 1px #D8D8D8BF;
-    opacity: 1;
+    padding: 12px;
+    background-color: #fff;
+    box-shadow: 0px 1px 1px #d8d8d8bf;
+    box-sizing: border-box;
 }
+
+.photo_gallery_head_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#photo_gallery_icon {
+    width: 30px;
+    height: 30px;
+    background: transparent url('img/Camera.png') no-repeat center center;
+    background-size: contain;
+}
+
+.photo_gallery_title {
+    margin-top: 30px;
+    font: normal normal normal 22px/17px Hiragino;
+    text-align: left;
+    color: #000000;
+}
+
+.photo_gallery_images {
+    display: flex;
+    gap: 10px;
+}
+
+.left_image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.right_images {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.right_images img {
+    width: 160px;
+    height: 95px;
+    object-fit: cover;
+}
+
 #pick_up_foods_title{
     top: 1742px;
     left: 1129px;
     width: 253px;
     height: 42px;
-    /* UI Properties */
     background: transparent url('img/Pick up foods.png') 0% 0% no-repeat padding-box;
     opacity: 1;
 }
