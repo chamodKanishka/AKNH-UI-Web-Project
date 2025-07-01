@@ -370,37 +370,48 @@
     height: 95px;
     object-fit: cover;
 }
-
-#pick_up_foods_title{
-    top: 1742px;
-    left: 1129px;
-    width: 253px;
-    height: 42px;
-    background: transparent url('img/Pick up foods.png') 0% 0% no-repeat padding-box;
-    opacity: 1;
+#pick_up_foods {
+    width: 490px;
+    height: 340px;
+    margin:20px;
+    background: #E9BC06 no-repeat padding-box;
+    box-shadow: 0px 1px 1px #D8D8D8BF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
 }
-#pick_up_foods_ramen{
-    /* Layout Properties */
-    top: 1814px;
-    left: 1032px;
+
+#pick_up_foods_title {
+    width: 307px;
+    height: 70px;
+    background: transparent url('img/Pick up foods.png') no-repeat center center;
+    background-size: contain;
+    margin-bottom: 15px;
+}
+
+.pickup_wrapper {
+    display: flex;
+    gap: 15px;
+}
+
+#pick_up_foods_ramen {
     width: 161px;
     height: 204px;
-    /* UI Properties */
-    background: transparent url('img/ramen.png') 0% 0% no-repeat padding-box;
-    opacity: 1;
+    background: transparent url('img/Ramen.png') no-repeat center center;
+    background-size: contain;
+    flex-shrink: 0;
 }
-#pick_up_foods_content{
-    /* Layout Properties */
-    top: 1814px;
-    left: 1212px;
+
+#pick_up_foods_content {
     width: 269px;
     height: 217px;
-    /* UI Properties */
-    text-align: left;
-    letter-spacing: NaNpx;
     color: #FFFFFF;
-    opacity: 1;
+    font: normal normal normal 14px/20px Hiragino;
+    text-align: left;
 }
+
 #end_head{
     position: absolute;
     top: 2250px;
@@ -416,11 +427,10 @@
 }
 #ANKH_Systems{
     position: absolute;
-    top: 2320px;
-    left: 430px;
-    width: 980px;
+    width: 1000px;
     height: 100px;
-    /* UI Properties */
+    padding-top: 100px;
+    margin: 10px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 1px 1px #D8D8D8BF;
     opacity: 1;
